@@ -1,0 +1,69 @@
+.projects{
+    margin: 80px auto 80px;
+    header{
+        position: relative;
+        padding: 10px 0;
+        margin-bottom: 70px;
+
+        h1{ font-size: $headingL; }
+        
+        a{
+            position: absolute;
+            top: 20px;
+            right: 0;
+            color: $white;
+            text-decoration: none;
+            font-weight: 800;
+            letter-spacing: 2px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $lightGreen;
+
+            &:hover{
+                color: $lightGreen;
+            }
+        }
+    }
+    .project-content{
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 50px;
+
+        figure{
+            padding-bottom: 15px;
+
+            .overlay{
+                display: none;
+            }
+
+            figcaption{
+                h1{
+                    margin: 10px 0;
+                }
+                h3{ 
+                    font-weight: normal;
+                    word-spacing: 15px;
+                }
+            }
+
+            ul{
+                list-style: none;
+
+                li{
+                    display: inline-block;
+                    margin: 25px 20px 0 0;
+                    
+                    a{
+                        position: relative;
+                        text-decoration: none;
+                        color: white;
+                        font-size: $regular;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        padding-bottom: 10px;
+                        border-bottom: 2px solid $lightGreen;
+                    }
+                }
+            }
+        }
+    }
+}

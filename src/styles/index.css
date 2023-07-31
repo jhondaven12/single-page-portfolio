@@ -1,0 +1,607 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+*, html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+#__next {
+  height: 100%;
+  color: rgb(255, 255, 255);
+  background: url("../../public/pattern-rings.svg") no-repeat top 200px left -20rem, url("../../public/pattern-circle.svg") no-repeat top 430px right -60px, url("../../public/pattern-rings.svg") no-repeat top 1340px right -20rem, url("../../public/pattern-rings.svg") no-repeat bottom 340px left -20rem, rgb(21, 21, 21);
+  font-family: "Space Grotesk", sans-serif;
+  overflow: auto;
+  background-attachment: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 30px rgb(21, 21, 21);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(21, 21, 21);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(36, 36, 36);
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  gap: 30px;
+}
+header nav div {
+  position: relative;
+}
+header nav div h2 {
+  font-size: clamp(1.5em, 5vw, 2rem);
+  letter-spacing: 3px;
+}
+header nav div a {
+  position: relative;
+  margin: 0 15px;
+  display: inline-block;
+}
+header nav div a div {
+  width: 30px;
+  height: 30px;
+}
+header nav div a:hover {
+  transition: 0.5s ease;
+  filter: invert(67%) sepia(64%) saturate(350%) hue-rotate(101deg) brightness(180%) contrast(100%);
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px auto 100px;
+}
+.intro picture {
+  text-align: center;
+  position: relative;
+}
+.intro picture img {
+  width: 300px;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.intro picture .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100%;
+  background: linear-gradient(to top, rgb(62, 61, 61), transparent, transparent);
+}
+.intro .hero-info {
+  text-align: center;
+}
+.intro .hero-info h1 {
+  font-size: 2.5em;
+  width: 340px;
+  margin: 50px auto 0;
+}
+.intro .hero-info h1 .typewritter {
+  border-bottom: 3px solid rgb(78, 225, 160);
+}
+.intro .hero-info p {
+  width: clamp(340px, 100%, 600px);
+  font-size: clamp(1em, 2vw, 1.125em);
+  margin: 40px auto;
+  line-height: 1.7rem;
+  word-break: keep-all;
+}
+.intro .hero-info a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  letter-spacing: 2px;
+  border-bottom: 2px solid rgb(78, 225, 160);
+  padding-bottom: 10px;
+}
+.intro .hero-info a:hover {
+  color: rgb(78, 225, 160);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 100%;
+}
+.skills hr {
+  background-color: rgb(217, 217, 217);
+  margin: auto;
+  width: 100%;
+}
+.skills .skills-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+.skills .skills-container div {
+  padding: 15px 0;
+}
+.skills .skills-container div h1, .skills .skills-container div p {
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+.skills .skills-container div h1 {
+  font-size: 1.5em;
+}
+.skills .skills-container div P {
+  font-size: 1.125em;
+}
+
+.projects {
+  margin: 80px auto 80px;
+}
+.projects header {
+  position: relative;
+  padding: 10px 0;
+  margin-bottom: 70px;
+}
+.projects header h1 {
+  font-size: 2.5em;
+}
+.projects header a {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(78, 225, 160);
+}
+.projects header a:hover {
+  color: rgb(78, 225, 160);
+}
+.projects .project-content {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 50px;
+}
+.projects .project-content figure {
+  padding-bottom: 15px;
+}
+.projects .project-content figure .overlay {
+  display: none;
+}
+.projects .project-content figure figcaption h1 {
+  margin: 10px 0;
+}
+.projects .project-content figure figcaption h3 {
+  font-weight: normal;
+  word-spacing: 15px;
+}
+.projects .project-content figure ul {
+  list-style: none;
+}
+.projects .project-content figure ul li {
+  display: inline-block;
+  margin: 25px 20px 0 0;
+}
+.projects .project-content figure ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(78, 225, 160);
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 100px 0 110px;
+}
+.contact address {
+  text-align: center;
+}
+.contact address h1 {
+  font-style: normal;
+  font-size: 2.5em;
+  margin: 0 0 15px;
+}
+.contact address ul {
+  list-style: none;
+  margin-bottom: 50px;
+}
+.contact address ul li {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-style: normal;
+  margin: 5px 0;
+  letter-spacing: 1.5px;
+}
+.contact form {
+  text-align: right;
+}
+.contact form label {
+  position: relative;
+}
+.contact form label input, .contact form label textarea {
+  width: 100%;
+  border: none;
+  outline: transparent;
+  background-color: transparent;
+  border-bottom: 2px solid gray;
+  color: white;
+  margin-bottom: 30px;
+}
+.contact form label input[type=text], .contact form label input[type=email] {
+  padding: 10px 35px 15px 0;
+}
+.contact form label textarea {
+  resize: none;
+  padding: 10px 15px 10px 0;
+}
+.contact form label input:-webkit-autofill {
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: white;
+}
+.contact form label input:autofill {
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: white;
+}
+.contact form label ::-moz-placeholder {
+  font-size: 1.125em;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+}
+.contact form label ::placeholder {
+  font-size: 1.125em;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+}
+.contact form label .error-icon {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+.contact form label .error-message {
+  position: absolute;
+  top: 37px;
+  right: 0;
+  font-size: 14px;
+  color: red;
+}
+.contact form label .isValid {
+  border-color: rgb(78, 225, 160);
+}
+.contact form label .isNotValid {
+  border-color: red;
+}
+.contact form input[type=submit] {
+  background: transparent;
+  outline: transparent;
+  border: transparent;
+  border-bottom: 2px solid rgb(78, 225, 160);
+  padding-bottom: 10px;
+  color: white;
+  letter-spacing: 1.5px;
+  font-size: 1.125em;
+  margin-top: 10px;
+}
+.contact form input[type=submit]:hover {
+  color: rgb(78, 225, 160);
+}
+
+footer {
+  width: 90%;
+  margin: 0 auto;
+}
+footer hr {
+  background-color: rgb(217, 217, 217);
+  margin: auto;
+  width: 100%;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 60px;
+  gap: 30px;
+}
+footer nav div h2 {
+  font-size: clamp(1.5em, 5vw, 2rem);
+  letter-spacing: 3px;
+}
+footer nav div a {
+  position: relative;
+  margin: 0 15px;
+  display: inline-block;
+}
+footer nav div a div {
+  width: 30px;
+  height: 30px;
+}
+footer nav div a:hover {
+  transition: 0.5s ease;
+  filter: invert(67%) sepia(64%) saturate(350%) hue-rotate(101deg) brightness(180%) contrast(100%);
+}
+
+@media only screen and (min-width: 768px) {
+  #__next {
+    background-position: top 95px left -15rem, top 430px right -60px, top 1140px right -20rem, bottom 140px left -22rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #__next {
+    background-position: top 95px left -15rem, top 460px right calc(45% - 30px), top 1020px right -20rem, bottom 200px left -15rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  main {
+    width: 75%;
+  }
+  #__next {
+    background-position: top 110px left -10%, top 460px right calc(45% - 30px), top 1120px right -15rem, bottom 200px left -10rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  main {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header nav {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 25px 0;
+    width: 90%;
+  }
+  header nav div a div {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  header nav {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  header nav {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .intro {
+    flex-direction: row;
+    position: relative;
+    margin: 100px auto;
+  }
+  .intro picture {
+    order: 2;
+    position: absolute;
+    right: calc(-5% - 4px);
+    top: calc(-18% - 5px);
+    bottom: 0;
+    z-index: 1;
+    width: 50%;
+  }
+  .intro picture img {
+    width: 100%;
+    height: 100%;
+  }
+  .intro picture .overlay {
+    width: 100%;
+    height: calc(100% + 1px);
+  }
+  .intro .hero-info {
+    order: 1;
+    z-index: 2;
+    text-align: left;
+    height: auto;
+  }
+  .intro .hero-info h1 {
+    margin: 50px 0 0;
+    font-size: clamp(3em, 10vw, 5.5em);
+    width: 550px;
+  }
+  .intro .hero-info h1 .spanOne {
+    display: block;
+  }
+  .intro .hero-info p {
+    margin: 60px 0 40px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .intro {
+    height: 600px;
+  }
+  .intro picture {
+    right: calc(-5% - 5px);
+  }
+  .intro .hero-info h1 {
+    font-size: 4em;
+    width: 550px;
+  }
+  .intro .hero-info h1 .spanOne {
+    display: inline;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .intro picture {
+    right: 0;
+    width: 40%;
+  }
+  .intro picture img {
+    width: 100%;
+  }
+  .intro .hero-info h1 {
+    width: 600px;
+    font-size: 4.5em;
+  }
+  .intro .hero-info p {
+    margin: 40px 0 60px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .intro {
+    height: 700px;
+  }
+  .intro .hero-info h1 {
+    margin: 70px 0 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .skills hr:nth-child(3) {
+    visibility: hidden;
+  }
+  .skills .skills-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 40px;
+    justify-content: center;
+  }
+  .skills .skills-container div {
+    width: 48%;
+  }
+  .skills .skills-container div h1, .skills .skills-container div p {
+    text-align: left;
+  }
+  .skills .skills-container div h1 {
+    font-size: 2.5em;
+  }
+  .skills .skills-container div p {
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .skills .skills-container {
+    gap: 20px 40px;
+  }
+  .skills .skills-container div {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .projects header h1 {
+    font-size: 4em;
+  }
+  .projects header a {
+    top: 45px;
+  }
+  .projects .project-content {
+    grid-template-columns: repeat(2, 50%);
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    row-gap: 60px;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .projects .project-content figure div {
+    position: relative;
+  }
+  .projects .project-content figure div .overlay {
+    background-color: rgba(0, 0, 0, 0.746);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 5px;
+    z-index: 1;
+    width: 100%;
+  }
+  .projects .project-content figure div .overlay a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(78, 225, 160);
+  }
+  .projects .project-content figure div:hover .overlay {
+    display: flex;
+  }
+  .projects .project-content figure ul {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact address h1 {
+    font-size: 4em;
+  }
+  .contact form {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact {
+    grid-template-columns: 60% 40%;
+  }
+  .contact address {
+    text-align: left;
+  }
+  .contact address ul li {
+    justify-content: left;
+  }
+  .contact form {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer nav {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 25px 0;
+  }
+  footer nav div a div {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  footer {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  footer {
+    width: 65%;
+  }
+}/*# sourceMappingURL=index.css.map */

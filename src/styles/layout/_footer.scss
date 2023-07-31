@@ -1,0 +1,40 @@
+footer{
+    width: 90%;
+    margin: 0 auto;
+
+    hr{
+        background-color: $dirtyWhite;
+        margin: auto;
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0 60px;
+        gap: 30px;
+
+        div{
+            h2{
+
+                font-size: clamp($headingM, 5vw, 2rem);
+                letter-spacing: 3px;
+            }
+            a{ 
+                position: relative;
+                margin: 0 15px; 
+                display: inline-block;
+
+                div{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            a:hover{
+                transition: .5s ease;
+                 filter: invert(67%) sepia(64%) saturate(350%) hue-rotate(101deg) brightness(180%) contrast(100%);
+            }
+        }
+    }
+}

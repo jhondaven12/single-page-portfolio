@@ -1,0 +1,53 @@
+@use './base/color' as *;
+@use './base/typography' as *;
+@use './abstract/variable' as *;
+
+*, html, body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+#__next{
+    height: 100%;
+    color: $white;
+    background: url($patternBg) no-repeat top 200px left -20rem,
+                url($circleBg) no-repeat top 430px right -60px,
+                url($patternBg) no-repeat top calc(800px + 540px) right -20rem,
+                url($patternBg) no-repeat bottom 340px left -20rem, $black;
+    font-family: $SpaceGrotesk;
+    overflow: auto;
+    background-attachment: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 30px rgb(21, 21, 21);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $black;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $gray;
+}
+
+@import './layout/navbar';
+@import './page/intro';
+@import './page/skills';
+@import './page/projects';
+@import './page/contact';
+@import './layout/footer';
+@import './media/index';

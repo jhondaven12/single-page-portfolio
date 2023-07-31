@@ -1,0 +1,32 @@
+.skills{
+    display: grid;
+    grid-template-columns: 100%;
+
+    hr{ 
+        background-color: $dirtyWhite;
+        margin: auto;
+        width: 100%;
+    }
+
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+
+        div{
+            padding: 15px 0;
+            
+            h1, p{
+                letter-spacing: 1.5px;
+                text-align: center;
+            }
+            
+            h1{
+                font-size: $headingM;
+            }
+            P{
+                font-size: $regular;
+            }
+        }
+    }
+}

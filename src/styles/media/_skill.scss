@@ -1,0 +1,39 @@
+@media only screen and (min-width: 768px){
+    .skills{
+        hr:nth-child(3){
+            visibility: hidden;
+        }
+        .skills-container{
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 40px;
+            justify-content: center;
+            
+            div{
+                width: 48%;
+                
+                h1, p{ text-align: left; }
+
+                h1{
+                    font-size: $headingL;
+                }
+                p{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .skills {
+        .skills-container {
+            gap: 20px 40px;
+
+            div {
+                width: 30%;
+            }
+        }
+    }
+}

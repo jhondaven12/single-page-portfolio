@@ -1,0 +1,60 @@
+.intro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto 100px;
+
+    picture{
+        text-align: center;
+        position: relative;
+
+        img{
+            width: 300px;
+            height: 550px;
+            object-fit: cover;
+        }
+
+        .overlay{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 100%;
+            background: linear-gradient(to top,  rgb(62, 61, 61), transparent, transparent);
+        }
+    }
+
+    .hero-info{
+        text-align: center;
+
+        h1{
+            font-size: $headingL;
+            width: 340px;
+            margin: 50px auto 0;
+
+            .typewritter{
+                border-bottom: 3px solid $lightGreen;
+            }
+        }
+        p{
+            width: clamp(340px, 100%, 600px);
+            font-size: clamp(1em, 2vw, $regular);
+            margin: 40px auto;
+            line-height: 1.7rem;
+            word-break: keep-all;
+        }
+        a{
+            text-decoration: none;
+            color: $white;
+            font-weight: 800;
+            letter-spacing: 2px;
+            border-bottom: 2px solid $lightGreen;
+            padding-bottom: 10px;
+
+            &:hover{
+                color: $lightGreen;
+            }
+        }
+    }
+}

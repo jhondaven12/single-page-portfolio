@@ -1,0 +1,37 @@
+@media only screen and (min-width: 768px) {
+    #__next {
+        background-position:
+            top 95px left -15rem,
+            top 430px right -60px,
+            top calc(800px + 340px) right -20rem,
+            bottom 140px left -22rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #__next {
+        background-position:
+            top 95px left -15rem,
+            top 460px right calc(45% - 30px),
+            top calc(800px + 220px) right -20rem,
+            bottom 200px left -15rem;
+    }
+}
+@media only screen and (min-width: 1400px){
+    main{
+        width: 75%;
+    }
+    #__next {
+        background-position:
+            top 110px left -10%,
+            top 460px right calc(45% - 30px),
+            top calc(800px + 320px) right -15rem,
+            bottom 200px left -10rem;
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    main{
+        width: 65%;
+    }
+}
