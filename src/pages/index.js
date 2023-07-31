@@ -103,7 +103,7 @@ function Portfolio() {
 
           <div className='hero-info' data-aos="fade-right">
             <h1>Nice to   
-              <span className='spanOne'> meet you I'm </span>
+              <span className='spanOne'> meet you I&apos;m </span>
               <span className='typewritter'>
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
@@ -117,8 +117,8 @@ function Portfolio() {
                 />
               </span>
             </h1>
-            <p>I'm John Dave Concepcion, I want to be a front end developer.
-              I'm ready to learn what I don't know yet. I have acquired
+            <p>I&apos;m John Dave Concepcion, I want to be a front end developer.
+              I&apos;m ready to learn what I don&apos;t know yet. I have acquired
               skills and knowledege to make your project success.</p>
 
             <div>
