@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/legacy/image';
 import { Typewriter } from 'react-simple-typewriter';
-import { allProject } from './allProject';
+import { Project } from './allProject';
 import { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import Aos from 'aos';
@@ -170,7 +170,7 @@ function Portfolio() {
           </header>
 
           <div className='project-content'>
-            {allProject.map((item, index) => (
+            {Project.map((item, index) => (
               <figure key={index}>
                 <div className='image' data-aos="fade-zoom-in"  data-aos-duration="1500">
                   <div className='overlay'>
