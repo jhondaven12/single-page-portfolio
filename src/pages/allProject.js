@@ -23,7 +23,7 @@ export const Project = [
     {
         src: '/thumbnail-project-4-large.webp',
         title: 'ENTERTAINMENT WEB APP',
-        languages: ['HTML', 'CSS', 'JAVASCRIPT'],
+        languages: ['NEXTJS', 'NEXTAUTH', 'SCSS'],
         project: 'https://entertaiment-apps.vercel.app/',
         code: 'https://github.com/jhondaven12/entertaiment-apps'
     },
