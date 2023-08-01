@@ -1,4 +1,4 @@
-export const allProject = [
+const allProject = [
     {
         src: '/thumbnail-iptracker-large.webp',
         title: 'IP TRACKER',
@@ -28,3 +28,5 @@ export const allProject = [
         code: 'https://github.com/jhondaven12/entertaiment-apps'
     },
 ]
+
+export { allProject }
