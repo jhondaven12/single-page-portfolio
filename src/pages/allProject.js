@@ -15,7 +15,7 @@ export const Project = [
     },
     {
         src: '/thumbnail-todoapp-large.webp',
-        title: 'TODO WEBP APP',
+        title: 'TODO WEB APP',
         languages: ['HTML', 'CSS', 'JAVASCRIPT'],
         project: 'https://jhondaven12.github.io/todolist/',
         code: 'https://github.com/jhondaven12/todolist'
